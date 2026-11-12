@@ -1,0 +1,131 @@
+file,column,description
+fig4_appendixF_stats.csv,park,Park label (fig4_summary rows) or park code (Moran rows).
+fig4_appendixF_stats.csv,n_hex,Number of park cells (fig4_summary rows).
+fig4_appendixF_stats.csv,share_visited,Share of park cells with at least one visit (Figure 4b).
+fig4_appendixF_stats.csv,mean_F,"Mean visits per park cell, sum over housing groups (Figure 4a)."
+fig4_appendixF_stats.csv,median_F,Median visits per park cell (Figure 4a).
+fig4_appendixF_stats.csv,mean_D,"Mean cumulative dwell time per park cell, seconds (Figure 4c)."
+fig4_appendixF_stats.csv,variant,"Analysis version: original = the published analysis reproduced (205 modelled hexagons, stored F_h); excl_closed = revised analysis (closed Chinese and Japanese Gardens excluded, park services recounted, F_h recounted per device cluster)."
+fig4_appendixF_stats.csv,stat,fig4_summary = Figure 4(a)-(c) values; appendixF_figure = Moran's I and p printed in Appendix F; appendixF_moran = same test with the seed set once (not printed).
+fig4_appendixF_stats.csv,metric,"freq = log(1 + visits); dur = log(1 + cumulative dwell time); all park cells, Queen contiguity."
+fig4_appendixF_stats.csv,n,Number of park cells in the Moran test.
+fig4_appendixF_stats.csv,I,Global Moran's I (all park cells).
+fig4_appendixF_stats.csv,EI,Expected Moran's I under no autocorrelation.
+fig4_appendixF_stats.csv,z,z-value under the normality assumption.
+fig4_appendixF_stats.csv,p_sim,Pseudo p-value from 999 permutations.
+moran_model_grid.csv,variant,"Analysis version: original = the published analysis reproduced (205 modelled hexagons, stored F_h); excl_closed = revised analysis (closed Chinese and Japanese Gardens excluded, park services recounted, F_h recounted per device cluster)."
+moran_model_grid.csv,park,"Park code: amk = Bishan-Ang Mo Kio Park, jurong = Jurong Lake Gardens, punggol = Punggol Waterway Park."
+moran_model_grid.csv,outcome,"Frequency = log(F_h + 1); Duration = log(D_h + 1); modelled hexagons, Queen contiguity, island dropped."
+moran_model_grid.csv,n_hex,Number of hexagons.
+moran_model_grid.csv,components,Connected components of the Queen contiguity graph.
+moran_model_grid.csv,I,Global Moran's I.
+moran_model_grid.csv,EI,Expected Moran's I under no autocorrelation.
+moran_model_grid.csv,z_norm,z-value under the normality assumption.
+moran_model_grid.csv,p_norm,p-value under the normality assumption.
+moran_model_grid.csv,p_sim,Pseudo p-value from 999 permutations.
+r3_4_fit.csv,table,Model: Table 4 = pooled OLS (all parks); Table 5 = spatial lag model (Jurong Lake Gardens); clusters = park-level counts of the near-home exclusion.
+r3_4_fit.csv,outcome,"Frequency, Duration or Mean dwell (Appendix H)."
+r3_4_fit.csv,n,Number of hexagons in the model or test.
+r3_4_fit.csv,r2,R-squared.
+r3_4_fit.csv,adj_r2,Adjusted R-squared.
+r3_4_fit.csv,aic,Akaike information criterion.
+r3_4_fit.csv,pseudo_r2,Pseudo R-squared of the spatial lag model (spreg).
+r3_4_mean_dwell_summary.csv,park,"Park code: amk = Bishan-Ang Mo Kio Park, jurong = Jurong Lake Gardens, punggol = Punggol Waterway Park."
+r3_4_mean_dwell_summary.csv,n_hex,Number of hexagons.
+r3_4_mean_dwell_summary.csv,n_visited,Modelled hexagons with at least one activity cluster.
+r3_4_mean_dwell_summary.csv,mean_F_h_stored,Mean F_h with the original (undercounting) count.
+r3_4_mean_dwell_summary.csv,mean_F_h_corrected,Mean F_h with the corrected count (one per device cluster).
+r3_4_mean_dwell_summary.csv,median_F_h_corrected,Median corrected F_h.
+r3_4_mean_dwell_summary.csv,mean_F_h_corrected_per_day,Mean corrected F_h divided by the 36-day window.
+r3_4_mean_dwell_summary.csv,mean_D_h_hours,"Mean cumulative dwell time per hexagon, hours."
+r3_4_mean_dwell_summary.csv,M_h_median_min,"Median mean dwell time per cluster M_h = D_h/F_h, minutes (visited hexagons)."
+r3_4_mean_dwell_summary.csv,M_h_q1_min,"First quartile of M_h, minutes."
+r3_4_mean_dwell_summary.csv,M_h_q3_min,"Third quartile of M_h, minutes."
+r3_4_mean_dwell_summary.csv,M_h_mean_min,"Mean of M_h, minutes."
+r3_4_mean_dwell_summary.csv,M_h_stored_F_median_min,"Median M_h if the original count were used, minutes (for comparison)."
+r3_4_table4.csv,outcome,"Frequency = log(F_h + 1); Duration = log(D_h + 1); Mean dwell = log(M_h), visited hexagons (Appendix H, Table H2a)."
+r3_4_table4.csv,term,"Model term: C(park)[T.jurong] / C(park)[T.punggol] = park fixed effects (reference Bishan-Ang Mo Kio Park); ps, pl, pb, pm = perceived safety, liveliness, beauty, monotony; peg = greenness; peo = openness; pep = park furniture; peps = park services within 500 m (count); per = internal road connectivity; pepw = proximity to water (inverse distance); set = inverse walking distance to the nearest MRT station; rho = spatial lag parameter; Intercept / CONSTANT = constant."
+r3_4_table4.csv,estimate,Coefficient estimate.
+r3_4_table4.csv,se,Standard error (HC3 for pooled OLS; maximum-likelihood for the spatial lag model).
+r3_4_table4.csv,p,Two-sided p-value.
+r3_4_table5.csv,outcome,"Frequency, Duration or Mean dwell = log(M_h) (Appendix H, Table H2b); Jurong spatial lag model."
+r3_4_table5.csv,term,"Model term: C(park)[T.jurong] / C(park)[T.punggol] = park fixed effects (reference Bishan-Ang Mo Kio Park); ps, pl, pb, pm = perceived safety, liveliness, beauty, monotony; peg = greenness; peo = openness; pep = park furniture; peps = park services within 500 m (count); per = internal road connectivity; pepw = proximity to water (inverse distance); set = inverse walking distance to the nearest MRT station; rho = spatial lag parameter; Intercept / CONSTANT = constant."
+r3_4_table5.csv,estimate,Coefficient estimate.
+r3_4_table5.csv,se,Standard error (HC3 for pooled OLS; maximum-likelihood for the spatial lag model).
+r3_4_table5.csv,p,Two-sided p-value.
+residual_moran.csv,variant,"Analysis version: original = the published analysis reproduced (205 modelled hexagons, stored F_h); excl_closed = revised analysis (closed Chinese and Japanese Gardens excluded, park services recounted, F_h recounted per device cluster)."
+residual_moran.csv,model,Model whose residuals are tested (pooled OLS).
+residual_moran.csv,scope,all parks (block-diagonal Queen weights) or a single park code.
+residual_moran.csv,outcome,"Frequency = log(F_h + 1); Duration = log(D_h + 1), cumulative dwell time."
+residual_moran.csv,n,Number of hexagons in the model or test.
+residual_moran.csv,I,Moran's I of the pooled OLS residuals.
+residual_moran.csv,z_norm,z-value under the normality assumption.
+residual_moran.csv,p_sim,Pseudo p-value from 999 permutations.
+robustness_near_home.csv,variant,revised = Tables 4-5 as released; near_home_excluded = clusters of devices whose inferred home is within 100 m of the hexagon removed (Appendix I).
+robustness_near_home.csv,table,Model: Table 4 = pooled OLS (all parks); Table 5 = spatial lag model (Jurong Lake Gardens); clusters = park-level counts of the near-home exclusion.
+robustness_near_home.csv,outcome,"Frequency = log(F_h + 1); Duration = log(D_h + 1), cumulative dwell time."
+robustness_near_home.csv,term,"Model term: C(park)[T.jurong] / C(park)[T.punggol] = park fixed effects (reference Bishan-Ang Mo Kio Park); ps, pl, pb, pm = perceived safety, liveliness, beauty, monotony; peg = greenness; peo = openness; pep = park furniture; peps = park services within 500 m (count); per = internal road connectivity; pepw = proximity to water (inverse distance); set = inverse walking distance to the nearest MRT station; rho = spatial lag parameter; Intercept / CONSTANT = constant."
+robustness_near_home.csv,estimate,Coefficient estimate.
+robustness_near_home.csv,se,Standard error (HC3 for pooled OLS; maximum-likelihood for the spatial lag model).
+robustness_near_home.csv,p,Two-sided p-value.
+robustness_near_home_fit.csv,variant,revised or near_home_excluded (model rows); empty for park rows.
+robustness_near_home_fit.csv,table,Model: Table 4 = pooled OLS (all parks); Table 5 = spatial lag model (Jurong Lake Gardens); clusters = park-level counts of the near-home exclusion.
+robustness_near_home_fit.csv,outcome,"Frequency = log(F_h + 1); Duration = log(D_h + 1), cumulative dwell time."
+robustness_near_home_fit.csv,n,Number of hexagons in the model or test.
+robustness_near_home_fit.csv,r2,R-squared.
+robustness_near_home_fit.csv,pseudo_r2,Pseudo R-squared of the spatial lag model (spreg).
+robustness_near_home_fit.csv,park,Park code (park rows of table = clusters).
+robustness_near_home_fit.csv,share_clusters_removed,Share of clusters in the modelled hexagons removed as near-home stays.
+robustness_near_home_fit.csv,mean_F_h_revised,"Mean F_h per modelled hexagon, all clusters."
+robustness_near_home_fit.csv,mean_F_h_near_home_excluded,Mean F_h without near-home stays.
+robustness_near_home_fit.csv,median_F_h_near_home_excluded,Median F_h without near-home stays.
+robustness_near_home_fit.csv,max_F_h_near_home_excluded,Maximum F_h without near-home stays.
+table3_summary.csv,park,"Park code: amk = Bishan-Ang Mo Kio Park, jurong = Jurong Lake Gardens, punggol = Punggol Waterway Park."
+table3_summary.csv,variant,"Analysis version: original = the published analysis reproduced (205 modelled hexagons, stored F_h); excl_closed = revised analysis (closed Chinese and Japanese Gardens excluded, park services recounted, F_h recounted per device cluster)."
+table3_summary.csv,n_hex,Number of hexagons.
+table3_summary.csv,mean_F_h,Mean visitation frequency F_h per modelled hexagon (activity clusters over 26 Aug-30 Sep 2022).
+table3_summary.csv,median_F_h,Median F_h per modelled hexagon.
+table3_summary.csv,share_visited,Share of modelled hexagons with at least one activity cluster.
+table3_summary.csv,mean_D_h,"Mean cumulative dwell time D_h per modelled hexagon, seconds."
+table4_fit.csv,variant,"Analysis version: original = the published analysis reproduced (205 modelled hexagons, stored F_h); excl_closed = revised analysis (closed Chinese and Japanese Gardens excluded, park services recounted, F_h recounted per device cluster)."
+table4_fit.csv,outcome,"Frequency = log(F_h + 1); Duration = log(D_h + 1), cumulative dwell time."
+table4_fit.csv,n,Number of hexagons in the model or test.
+table4_fit.csv,r2,R-squared.
+table4_fit.csv,adj_r2,Adjusted R-squared.
+table4_pooled_ols.csv,variant,"Analysis version: original = the published analysis reproduced (205 modelled hexagons, stored F_h); excl_closed = revised analysis (closed Chinese and Japanese Gardens excluded, park services recounted, F_h recounted per device cluster)."
+table4_pooled_ols.csv,outcome,"Frequency = log(F_h + 1); Duration = log(D_h + 1), cumulative dwell time."
+table4_pooled_ols.csv,term,"Model term: C(park)[T.jurong] / C(park)[T.punggol] = park fixed effects (reference Bishan-Ang Mo Kio Park); ps, pl, pb, pm = perceived safety, liveliness, beauty, monotony; peg = greenness; peo = openness; pep = park furniture; peps = park services within 500 m (count); per = internal road connectivity; pepw = proximity to water (inverse distance); set = inverse walking distance to the nearest MRT station; rho = spatial lag parameter; Intercept / CONSTANT = constant."
+table4_pooled_ols.csv,estimate,Coefficient estimate.
+table4_pooled_ols.csv,se,Standard error (HC3 for pooled OLS; maximum-likelihood for the spatial lag model).
+table4_pooled_ols.csv,p,Two-sided p-value.
+table5_fit.csv,variant,"Analysis version: original = the published analysis reproduced (205 modelled hexagons, stored F_h); excl_closed = revised analysis (closed Chinese and Japanese Gardens excluded, park services recounted, F_h recounted per device cluster)."
+table5_fit.csv,outcome,"Frequency = log(F_h + 1); Duration = log(D_h + 1), cumulative dwell time."
+table5_fit.csv,n,Number of hexagons in the model or test.
+table5_fit.csv,components,Connected components of the Queen contiguity graph.
+table5_fit.csv,aic,Akaike information criterion.
+table5_fit.csv,pseudo_r2,Pseudo R-squared of the spatial lag model (spreg).
+table5_fit.csv,rho,Spatial lag parameter.
+table5_fit.csv,resid_moran_I,Moran's I of the spatial lag model residuals.
+table5_fit.csv,resid_moran_z,z-value of the residual Moran's I.
+table5_fit.csv,resid_moran_p_sim,Permutation p-value of the residual Moran's I (999 permutations).
+table5_jurong_slm.csv,variant,"Analysis version: original = the published analysis reproduced (205 modelled hexagons, stored F_h); excl_closed = revised analysis (closed Chinese and Japanese Gardens excluded, park services recounted, F_h recounted per device cluster)."
+table5_jurong_slm.csv,outcome,"Frequency = log(F_h + 1); Duration = log(D_h + 1), cumulative dwell time."
+table5_jurong_slm.csv,term,"Model term: C(park)[T.jurong] / C(park)[T.punggol] = park fixed effects (reference Bishan-Ang Mo Kio Park); ps, pl, pb, pm = perceived safety, liveliness, beauty, monotony; peg = greenness; peo = openness; pep = park furniture; peps = park services within 500 m (count); per = internal road connectivity; pepw = proximity to water (inverse distance); set = inverse walking distance to the nearest MRT station; rho = spatial lag parameter; Intercept / CONSTANT = constant."
+table5_jurong_slm.csv,estimate,Coefficient estimate.
+table5_jurong_slm.csv,se,Standard error (HC3 for pooled OLS; maximum-likelihood for the spatial lag model).
+table5_jurong_slm.csv,p,Two-sided p-value.
+table5_weights_robustness.csv,run,Weights robustness run: A original 107 hexagons Queen; B original KNN k=8; C revised 87 hexagons KNN k=8; D revised 86 hexagons Queen (= Table 5).
+table5_weights_robustness.csv,outcome,Frequency = log(F_h + 1); Duration = log(D_h + 1). Runs A-B use the original data (stored F_h), runs C-D the revised data (corrected F_h).
+table5_weights_robustness.csv,n,Number of hexagons in the model or test.
+table5_weights_robustness.csv,components,Connected components of the Queen contiguity graph.
+table5_weights_robustness.csv,moran_I,Global Moran's I of the outcome under the run's weights.
+table5_weights_robustness.csv,moran_EI,Expected Moran's I.
+table5_weights_robustness.csv,moran_z_norm,z-value (normality).
+table5_weights_robustness.csv,moran_p_norm,p-value (normality).
+table5_weights_robustness.csv,moran_p_sim,Permutation p-value (999 permutations).
+table5_weights_robustness.csv,aic,Akaike information criterion.
+table5_weights_robustness.csv,pseudo_r2,Pseudo R-squared of the spatial lag model (spreg).
+table5_weights_robustness.csv,term,"Model term: C(park)[T.jurong] / C(park)[T.punggol] = park fixed effects (reference Bishan-Ang Mo Kio Park); ps, pl, pb, pm = perceived safety, liveliness, beauty, monotony; peg = greenness; peo = openness; pep = park furniture; peps = park services within 500 m (count); per = internal road connectivity; pepw = proximity to water (inverse distance); set = inverse walking distance to the nearest MRT station; rho = spatial lag parameter; Intercept / CONSTANT = constant."
+table5_weights_robustness.csv,estimate,Coefficient estimate.
+table5_weights_robustness.csv,se,Standard error (HC3 for pooled OLS; maximum-likelihood for the spatial lag model).
+table5_weights_robustness.csv,p,Two-sided p-value.

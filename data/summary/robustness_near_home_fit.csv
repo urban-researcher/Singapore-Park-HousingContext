@@ -1,0 +1,12 @@
+variant,table,outcome,n,r2,pseudo_r2,park,share_clusters_removed,mean_F_h_revised,mean_F_h_near_home_excluded,median_F_h_near_home_excluded,max_F_h_near_home_excluded
+revised,Table 4,Frequency,185.0,0.2265394091779125,,,,,,,
+revised,Table 5,Frequency,86.0,,0.39498395453956386,,,,,,
+revised,Table 4,Duration,185.0,0.2462039134712959,,,,,,,
+revised,Table 5,Duration,86.0,,0.4195901031247886,,,,,,
+near_home_excluded,Table 4,Frequency,185.0,0.24678732631334277,,,,,,,
+near_home_excluded,Table 5,Frequency,86.0,,0.38220372490389987,,,,,,
+near_home_excluded,Table 4,Duration,185.0,0.2645432993854526,,,,,,,
+near_home_excluded,Table 5,Duration,86.0,,0.4140876077663381,,,,,,
+,clusters,,,,,amk,0.33283245679939893,17.285714285714285,11.532467532467532,1.0,289.0
+,clusters,,,,,jurong,0.05184200531712875,60.52873563218391,57.39080459770115,7.0,2925.0
+,clusters,,,,,punggol,0.4164691943127962,241.14285714285714,140.71428571428572,5.0,1389.0

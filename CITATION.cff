@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Cite the paper and the archived release. Authors and identifiers are added at acceptance (double-anonymised review)."
+title: "Mapping Urban Park Use: Mobile Data Evidence on Housing Context and Design Effects in Singapore — analysis code and public summaries"
+type: software
+version: "0.2.0-release-candidate"
+date-released: "2026-11-12"
+license: MIT
+# TODO at acceptance: add authors, repository-code and doi.
+# Summary/synthetic data and documentation: CC-BY-4.0; see DATA_LICENSE.md.

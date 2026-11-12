@@ -1,0 +1,31 @@
+park,n_hex,share_visited,mean_F,median_F,mean_D,variant,stat,metric,n,I,EI,z,p_sim
+Bishan-Ang Mo Kio Park,112.0,0.616,17.61,1.0,27032.0,original,fig4_summary,,,,,,
+Jurong Lake Gardens,365.0,0.877,21.36,4.0,74277.0,original,fig4_summary,,,,,,
+Punggol Waterway Park,43.0,0.744,41.84,4.0,245929.0,original,fig4_summary,,,,,,
+amk,,,,,,original,appendixF_moran,freq,112.0,0.0318,-0.009,0.67,0.233
+amk,,,,,,original,appendixF_moran,dur,112.0,0.0829,-0.009,1.508,0.062
+jurong,,,,,,original,appendixF_moran,freq,365.0,0.3297,-0.0027,10.419,0.001
+jurong,,,,,,original,appendixF_moran,dur,365.0,0.3264,-0.0027,10.315,0.001
+punggol,,,,,,original,appendixF_moran,freq,43.0,0.1996,-0.0238,2.247,0.014
+punggol,,,,,,original,appendixF_moran,dur,43.0,0.3397,-0.0238,3.655,0.002
+amk,,,,,,original,appendixF_figure,freq,112.0,0.03180598859633458,,,0.233
+amk,,,,,,original,appendixF_figure,dur,112.0,0.08286635055243238,,,0.075
+jurong,,,,,,original,appendixF_figure,freq,365.0,0.329736911417637,,,0.001
+jurong,,,,,,original,appendixF_figure,dur,365.0,0.3264233096417997,,,0.001
+punggol,,,,,,original,appendixF_figure,freq,43.0,0.19962588693451436,,,0.019
+punggol,,,,,,original,appendixF_figure,dur,43.0,0.3397081848014058,,,0.001
+Bishan-Ang Mo Kio Park,112.0,0.616,17.61,1.0,27032.0,excl_closed,fig4_summary,,,,,,
+Jurong Lake Gardens,335.0,0.872,46.37,4.0,73160.0,excl_closed,fig4_summary,,,,,,
+Punggol Waterway Park,43.0,0.744,153.33,4.0,245929.0,excl_closed,fig4_summary,,,,,,
+amk,,,,,,excl_closed,appendixF_moran,freq,112.0,0.0318,-0.009,0.67,0.233
+amk,,,,,,excl_closed,appendixF_moran,dur,112.0,0.0829,-0.009,1.508,0.062
+jurong,,,,,,excl_closed,appendixF_moran,freq,335.0,0.3008,-0.003,8.84,0.001
+jurong,,,,,,excl_closed,appendixF_moran,dur,335.0,0.3326,-0.003,9.768,0.001
+punggol,,,,,,excl_closed,appendixF_moran,freq,43.0,0.1593,-0.0238,1.842,0.039
+punggol,,,,,,excl_closed,appendixF_moran,dur,43.0,0.3397,-0.0238,3.655,0.001
+amk,,,,,,excl_closed,appendixF_figure,freq,112.0,0.03180598859633458,,,0.233
+amk,,,,,,excl_closed,appendixF_figure,dur,112.0,0.08286635055243238,,,0.075
+jurong,,,,,,excl_closed,appendixF_figure,freq,335.0,0.30075799652140917,,,0.001
+jurong,,,,,,excl_closed,appendixF_figure,dur,335.0,0.33264730010023547,,,0.001
+punggol,,,,,,excl_closed,appendixF_figure,freq,43.0,0.1593410401342372,,,0.039
+punggol,,,,,,excl_closed,appendixF_figure,dur,43.0,0.3397081848014058,,,0.001
